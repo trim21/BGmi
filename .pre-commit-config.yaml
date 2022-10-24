@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/python-poetry/poetry
-    rev: "1.2.2"
+    rev: "3f741f77a2822b6fe0cdf2f27cce2c701e011fc2"  # frozen: 1.2.0rc1
     hooks:
       - id: poetry-check
       - id: poetry-lock
@@ -8,7 +8,7 @@ repos:
         args: [--check]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: 3298ddab3c13dd77d6ce1fc0baf97691430d84b0  # frozen: v4.3.0
     hooks:
       - id: check-merge-conflict
         exclude: \.rst$
@@ -33,13 +33,13 @@ repos:
         args: [--remove]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.1.0
+    rev: d50ce21fc45d014790d4ecf71d1b1d7ccc450526  # frozen: v3.1.0
     hooks:
       - id: pyupgrade
         args: [--py38-plus]
 
   - repo: https://github.com/PyCQA/autoflake
-    rev: v1.4
+    rev: 910a104e8f3b86e46ff1da8b0ea531e5f023edc7  # frozen: v1.7.7
     hooks:
       - id: autoflake
         args:
@@ -49,11 +49,11 @@ repos:
           - --expand-star-imports
 
   - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
+    rev: c5e8fa75dda5f764d20f66a215d71c21cfa198e1  # frozen: 5.10.1
     hooks:
       - id: isort
 
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 27d20144a7517594e24a1649451177b2a11284be  # frozen: 22.10.0
     hooks:
       - id: black
